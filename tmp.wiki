@@ -1,0 +1,269 @@
+
+== 训练 ==
+=== (ing) luogu 线性动态规划 ===
+
+* (done) P1020 导弹拦截 (最长xxx子序列，Dilworth定理，nn，nlgn)
+
+---
+
+* P1091 合唱队形
+* P1280 尼克的任务
+* P1880 [NOI1995]石子合并
+* P1140 相似基因
+* P1282 多米诺骨牌
+
+---
+
+* Dilworth 定理：偏序集的最少反链划分数等于最长链的长度
+
+=== (ing) kuangbin 线段树 ===
+
+* (done) HDU-1166 敌兵布阵 (水，单点更新)
+* (done) HDU-1754 I Hate It (区间最大值，单点更新)
+* (done) POJ-3468 A Simple Problem with Integers (区间更新，ll)
+* (done) HDU-1698 Just a Hook (区间修改为统一的值)
+* (done) HDU-3974 Assign the task (模拟水过)
+* (done) POJ-3264 Balanced Lineup (维护区间最大值和最小值)
+* (done) HDU-4027 Can you answer these queries? (区间开平方，优化做完还要输入输出挂，build())
+* (done) HDU-1540 Tunnel Warfare (最大连续区间\*)
+* (done) HDU-4578 Transformation (维护和、积、平方和、立方和，好麻烦，平方和立方展开公式)
+
+---
+
+* POJ-2528 Mayor's posters
+* ZOJ-1610 Count the Colors
+* HDU-4614 Vases and Flowers //
+* HDU-4553 约会安排
+* POJ-1177 Picture
+* HDU-1255 覆盖的面积
+* HDU-1542 Atlantis
+* HDU-3642 Get The Treasury //
+
+---
+
+* ios_base::sync_with_stdio(0); cin.tie(NULL);
+
+=== 归档 ===
+
+==== (done) luogu 动态规划的背包问题 19/05/03 ====
+
+* (done) P1048 采药 (01背包)
+* (done) P1616 疯狂的采药 (完全背包)
+* (done) P1060 开心的金明 (01背包，间接给出价值)
+* (done) P1049 装箱问题 (01背包，体积价值相等)
+* (done) P1164 小A点菜 (01背包，求方案总数，dp[i][j] = dp[i - 1][j] + dp[i - 1][j - V[i]])
+* (done) P1064 金明的预算方案 (树形背包/分组背包，有依赖的背包，枚举分组，算不上树形dp吧)
+
+---
+
+* (done) 有点简单，再去补充几题背包的题
+* 单调队列
+* [https://www.cnblogs.com/ifmyt/p/9588872.html 树形DP入门博客]
+
+---
+
+* (done) P1776 宝物筛选 (多重背包)
+* (done) P1833 樱花 (混合背包，数据较弱，可以整合为多重背包)
+* (done) P1757 通天之分组背包 (分组背包，改改01背包)
+* (done) P2014 选课 (树形背包)
+
+==== (done) kuangbin 网络流 19/05/02 ====
+
+* (done) POJ-3281 Dining (拆点)
+* (done) HDU-3416 Marriage Match IV (重复了，找出最短路经过的边，跑最大流)
+* (done) HDU-3081 Marriage Match II (最大流 + 传递闭包 + 二分，二分图匹配计数)
+* (done) HDU-4292 Food (拆点)
+* (done) HDU-4289 Control (拆点，点转化为边，求最小割)
+* (done) HDU-3605 Escape (状态压缩 + 最大流，妙～)
+* (done) POJ-2195 Going Home (BFS 最短路建图，跑 SPFA 最小费用最大流)
+* (done) POJ-2516 Minimum Cost (每种商品分开跑最小费用最大流，读入的数据种类太多，恐怖，读题困难)
+* (done) POJ-1087 A Plug for UNIX (水题，转换器连一条 INF 的边，读错题，搞复杂了)
+* (done) POJ-1459 Power Network (水题，注意点编号从 0 开始)
+* (done) POJ-3436 ACM Computer Factory (拆点，输出边集，题面难懂)
+* (done) HDU-4280 Island Transport (无向图最大流，双向边不可公用)
+* (done) UVA-10480 Sabotage (最小割，输出边集)
+* (done) HDU-2732 Leapin' Lizards (拆点，输出神坑)
+
+---
+
+* HDU-3338 Kakuro Extension (神奇最大流，放弃)
+
+---
+
+* ISAP
+* SAP
+* (done) 最小费用最大流
+
+==== (done) luogu 最短路问题 19/05/02 ====
+
+* (done) P1339 [USACO09OCT]热浪Heat Wave (水)
+* (done) P1462 通往奥格瑞玛的道路 (最短路 + 二分)
+* (done) P1346 电车 (POJ-1847 Tram)
+* (done) P1119 灾后重建 (Floyd 好题!!，原理)
+* (done) P1144 最短路计数 (改一下 Dij 的更新操作)
+* (done) P1522 牛的旅行 Cow Tours (利用最短路求解，Floyd)
+
+---
+
+* 再去看看 Floyd
+
+==== (done) luogu 最小生成树 19/05/01====
+
+* (done) P1546 最短网络 Agri-Net (水)
+* (done) P2330 [SCOI2005]繁忙的都市 (MST 的性质，MST 的最大边权)
+* (done) P1991 无线通讯网 (最小生成树的第 K 大边，N + 1个连通块，POJ-2349)
+* (done) P1265 公路修建 (好题，完全图，Prim 算法实时计算边长)
+
+---
+
+* 最小生成树的性质
+* 瓶颈生成树
+
+==== (done) luogu 图的遍历 19/04/30 ====
+
+* (done) P2661-信息传递 (求图最小环，拓扑排序)
+* (done) P1330-封锁阳光大学 (图黑白染色)
+* (done) P1341-无序字母对 (并查集 + 欧拉路径)
+* (done) P2921-[USACO08DEC]在农场万圣节Trick or Treat on the Farm (图中所有环大小计算，两种环)
+
+---
+
+* 并查集求图最小环
+* 图染色，2-SAT
+* 欧拉路径，欧拉回路
+
+
+==== (done) kuangbin 最小生成树  19/04/29 ====
+
+* (done) POJ-1251 Jungle Roads (水题，%c)
+* (done) POJ-1287 Networking (水)
+* (done) POJ-2031 Building a Space Station (%f浮点数尴尬精度，两球间距离)
+* (done) POJ-2421 Constructing Roads (一些边已建好，简单处理一下)
+* (done) ZOJ-1586 QS Network (处理一下边权)
+* (done) HDU-1233 还是畅通工程 (水)
+* (done) HDU-1875 畅通工程再续 (浮点数，条件连边)
+* (done) HDU-1301 Jungle Roads (重复 -> POJ-1251)
+* (done) POJ-2349 Arctic Network (第 K 大边)
+* (done) POJ-1751 Highways (求最小生成树的边，加 0 权边)
+* (done) UVA-10147 Highways (多组的 POJ-1751) +
+* (done) POJ-1258 Agri-Net (水)
+* (done) POJ-3026 Borg Maze (BFS + Kruskal，用最短路建图，垃圾输入)
+* (done) POJ-1789 Truck History (Prim，Kruskal 超时)
+* (done) POJ-1679 The Unique MST (次小生成树)\*
+
+--- 
+
+* (done) [https://blog.pazyx.xyz/2019/04/29/kuangbin_MST/ 题解]
+* (done) Prim Kruskal 复杂度分析 -> Prim: O(n * n) 稠密图 , Kruskal: O(e * loge) 稀疏图
+* 次小生成树，补充 kuangbin 次小生成树模板
+* 最小生成树计数
+
+
+==== (done) kuangbin 最短路 19/04/28 ====
+
+* (done) POJ-2387 Til the Cows Come Home（水）
+* (done) POJ-2253 Frogger（浮点数，尴尬精度）
+* (done) POJ-1797 Heavy Transportation（求所有路径中最大边权的最小值）
+* (done) POJ-3268 Silver Cow Party（求往返最短路，反向连边）
+* (done) POJ-1860 Currency Exchange（换汇问题，最长路判断正环）
+* (done) POJ-3259 Wormholes（判断负值圈）
+* (done) POJ-1502 MPI Maelstrom（所有点最短路中的最长路）
+* (done) POJ-3660 Cow Contest（传递闭包 floyd 或 DFS）
+* (done) POJ-2240 Arbitrage（判断正环）
+* (done) POJ-1511 Invitation Cards（求往返最短路，反向连边）
+* (done) POJ-1847 Tram (水，电车路口)
+* (done) POJ-1062 昂贵的聘礼\*
+* (done) POJ-3159 Candies（伪差分约束系统（裸最短路）+ 输入输出挂）
+* (done) POJ-2502 Subway（建图麻烦）
+* (done) POJ-3169 Layout（差分约束系统，输出差值）
+* (done) LightOJ-1074 Extended Traffic（判断所有负环）
+* (done) HDU-4725 The Shortest Path in Nya Graph（建图技巧）
+* (done) HDU-3416 Marriage Match IV（最短路 + 最大流 找出最短路经过的边）
+
+---
+
+* (done\*) HDU-4370 0 or 1（蜜汁转化，不会，果断放弃）
+
+---
+
+* (done) [https://blog.pazyx.xyz/2019/04/29/kuangbin_short_path/ 题解] 
+* (done) floyd 传递闭包 || DFS 传递闭包 -> POJ-3660 Cow Contest
+* (done) 差分约束系统
+
+
+== 计划 ==
+
+=== 图论 ===
+
+* 学习
+** (done) 传递闭包
+** (done) 差分约束系统
+** 补一下并查集
+** Tarjan 强连通分量
+** 最小生成树的性质
+** ISAP
+** SAP
+** 2-SAT
+** LCA
+** 最小费用最大流
+** 欧拉路径，欧拉回路
+** 次小生成树
+** 最小生成树计数
+* 刷题
+** (done) kuangbin 最短路 19/04/28
+** (done) kuangbin 最小生成树 19/04/29
+** (done) luogu 图的遍历 19/04/30
+** (done) luogu 最小生成树 19/05/01
+** (done) luogu 最短路问题 19/05/02
+** (done) kuangbin 网络流 19/05/02
+** kuangbin 搜索进阶
+** kuangbin 匹配问题 
+** kuangbin 并查集 
+** kuangbin 生成树
+** kuangbin 连通图
+** luogu 强连通分量
+** luogu 较复杂的图论I
+** luogu 较复杂的图论II
+
+=== 数据结构 ===
+
+* 学习
+** (done) 树状数组
+** 主席树
+** 权值线段树
+** 树套树
+** 树上倍增
+** 堆
+** Fibonacci 堆
+** 树链剖分
+* 刷题
+** kuangbin 线段树
+** luogu 线性数据结构
+** luogu 树形数据结构
+** luogu 提高模板-nlogn数据结构
+** luogu 线段树树状数组基础
+** luogu 倍增
+** luogu 堆
+
+=== 动态规划 ===
+
+* 学习
+** 复习背包九讲
+** LIS和LCS
+** 状态压缩
+** 单调队列
+** 区间DP
+** 树形DP
+** 斜率优化
+** 插头DP
+* 刷题
+** kuangbin 基础DP1
+** kuangbin 数位DP
+** kuangbin 区间DP
+** (done) luogu 动态规划的背包问题 19/05/03
+** luogu 线性动态规划
+** luogu 多维动态规划
+** luogu 更要技巧的动规与记忆化
+** luogu 动态规划TG.lv(1)
+** luogu 动态规划TG.lv(2)
+** luogu 动态规划TG.lv(3)
