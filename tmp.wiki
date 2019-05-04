@@ -1,20 +1,6 @@
-
 == 训练 ==
-=== (ing) luogu 线性动态规划 ===
 
-* (done) P1020 导弹拦截 (最长xxx子序列，Dilworth定理，nn，nlgn)
-
----
-
-* P1091 合唱队形
-* P1280 尼克的任务
-* P1880 [NOI1995]石子合并
-* P1140 相似基因
-* P1282 多米诺骨牌
-
----
-
-* Dilworth 定理：偏序集的最少反链划分数等于最长链的长度
+[https://github.com/pa-zyx/training 代码仓库]
 
 === (ing) kuangbin 线段树 ===
 
@@ -44,6 +30,19 @@
 * ios_base::sync_with_stdio(0); cin.tie(NULL);
 
 === 归档 ===
+
+==== (done) luogu 线性动态规划 19/05/04 ====
+
+* (done) P1020 导弹拦截 (最长xxx子序列，Dilworth定理，nn，nlgn)
+* (done) P1091 合唱队形 (正反两次 LIS)
+* (done) P1280 尼克的任务 (反向扫一遍)
+* (done) P1880 [NOI1995]石子合并 (环状区间dp，复制成两段)
+* (done) P1140 相似基因 (线性dp，预处理，注意初始化)
+* (done) P1282 多米诺骨牌 (dp[i][j] -> 前 i 个骰子，上下差 j 个点数需要旋转的次数)
+
+---
+
+* Dilworth 定理：偏序集的最少反链划分数等于最长链的长度
 
 ==== (done) luogu 动态规划的背包问题 19/05/03 ====
 
@@ -190,7 +189,6 @@
 * (done) floyd 传递闭包 || DFS 传递闭包 -> POJ-3660 Cow Contest
 * (done) 差分约束系统
 
-
 == 计划 ==
 
 === 图论 ===
@@ -261,7 +259,7 @@
 ** kuangbin 数位DP
 ** kuangbin 区间DP
 ** (done) luogu 动态规划的背包问题 19/05/03
-** luogu 线性动态规划
+** (done) luogu 线性动态规划 19/05/04
 ** luogu 多维动态规划
 ** luogu 更要技巧的动规与记忆化
 ** luogu 动态规划TG.lv(1)
