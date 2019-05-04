@@ -1,8 +1,10 @@
+# 匹配问题
+
+* (done) HDU-1045 Fire Net (每一行或每一列每多一堵墙流量加 1，然后跑最大流)
+* (done) HDU-2444 The Accomodation of Students (图黑白染色"P1330-封锁阳光大学" + 二分图匹配，匈牙利或者跑最大流都可以)
 
 ---
 
-* HDU-1045 Fire Net
-* HDU-2444 The Accomodation of Students
 * HDU-1083 Courses
 * HDU-1281 棋盘游戏
 * HDU-2819 Swap
@@ -20,3 +22,7 @@
 * HDU-3488 Tour
 * URA-1099 Work Scheduling
 * HDU-4687 Boke and Tsukkomi
+
+---
+
+* 去研究一下图染色
