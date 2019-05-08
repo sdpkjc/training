@@ -6,13 +6,14 @@
 
 * (done) HDU-1045 Fire Net (每一行或每一列每多一堵墙流量加 1，然后跑最大流)
 * (done) HDU-2444 The Accomodation of Students (图黑白染色"P1330-封锁阳光大学" + 二分图匹配，匈牙利或者跑最大流都可以)
+* (done) HDU-1083 Courses (水)
+* (done) HDU-1281 棋盘游戏 (xy匹配，枚举关键点)
+* (done) HDU-2819 Swap (相当于输出匹配，特判，两种方案，只是用 R 操作或只使用 C 操作)
+* (done) HDU-2255 奔小康赚大钱 (二分图最佳匹配，KM 算法)
+* (done) HDU-2389 Rain on your Parade (dinic 和 hungary 都超时，KM 算法上场)
 
 ---
 
-* HDU-1083 Courses
-* HDU-1281 棋盘游戏
-* HDU-2819 Swap
-* HDU-2389 Rain on your Parade
 * HDU-4185 Oil Skimming
 * POJ-3020 Antenna Placement
 * HDU-1054 Strategic Game
@@ -22,7 +23,6 @@
 * POJ-2289 Jamie's Contact Groups
 * POJ-2112 Optimal Milking
 * POJ-3189 Steady Cow Assignment
-* HDU-2255 奔小康赚大钱
 * HDU-3488 Tour
 * URA-1099 Work Scheduling
 * HDU-4687 Boke and Tsukkomi
@@ -30,8 +30,9 @@
 ---
 
 * 去研究一下图染色
+* KM 复杂度 O(n_x n_x n_y)，Hungary 复杂度 O(VE)
 
-=== (ing) kuangbin 线段树 ===
+=== (todo) kuangbin 线段树 ===
 
 * (done) HDU-1166 敌兵布阵 (水，单点更新)
 * (done) HDU-1754 I Hate It (区间最大值，单点更新)
@@ -59,6 +60,28 @@
 * ios_base::sync_with_stdio(0); cin.tie(NULL);
 
 === 归档 ===
+
+==== (done) luogo 简单模拟 19/05/08 ====
+
+* (done) P1003 铺地毯 (水)
+* (done) P1067 多项式输出 (情况有点多哟，3wa)
+* (done) P1540 机器翻译 (水)
+* (done) P1056 排座椅 (写的好麻烦)
+* (done) P1328 生活大爆炸版石头剪刀布 (水，取模)
+* (done) P1563 玩具谜题 (条件判断，取模)
+
+==== (done) luogo 贪心 & 贪心EX 19/05/07 ====
+
+* (done) P1090 合并果子 (Huffman 编码)
+* (done) P1181 数列分段Section I (随便贪一下)
+* (done) P1208 [USACO1.3]混合牛奶 Mixing Milk (水)
+* (done) P1223 排队接水 (水，浮点数精度)
+* (done) P1094 纪念品分组 (尽量最大最小成一组，如果不行就最大的独自一组)
+* (done) P1803 凌乱的yyy / 线段覆盖 (优先选先结束的)
+* (done) P1031 均分纸牌 (只从一个方向传递，考虑负数)
+* (done) P1080 国王游戏 (好题！数学推导，lr的积小的优先，高精度！！！)
+* (done) P1233 木棍加工 (排序后，最长xxx子序列，"P1020 导弹拦截"，Dilworth定理)
+* (done) P2123 皇后游戏 (交换法推公式，再对ab分类讨论，好难)
 
 ==== (done) luogu 线性动态规划 19/05/04 ====
 
@@ -217,80 +240,3 @@
 * (done) [https://blog.pazyx.xyz/2019/04/29/kuangbin_short_path/ 题解] 
 * (done) floyd 传递闭包 || DFS 传递闭包 -> POJ-3660 Cow Contest
 * (done) 差分约束系统
-
-== 计划 ==
-
-=== 图论 ===
-
-* 学习
-** (done) 传递闭包
-** (done) 差分约束系统
-** 补一下并查集
-** Tarjan 强连通分量
-** 最小生成树的性质
-** ISAP
-** SAP
-** 2-SAT
-** LCA
-** 最小费用最大流
-** 欧拉路径，欧拉回路
-** 次小生成树
-** 最小生成树计数
-* 刷题
-** (done) kuangbin 最短路 19/04/28
-** (done) kuangbin 最小生成树 19/04/29
-** (done) luogu 图的遍历 19/04/30
-** (done) luogu 最小生成树 19/05/01
-** (done) luogu 最短路问题 19/05/02
-** (done) kuangbin 网络流 19/05/02
-** kuangbin 搜索进阶
-** kuangbin 匹配问题 
-** kuangbin 并查集 
-** kuangbin 生成树
-** kuangbin 连通图
-** luogu 强连通分量
-** luogu 较复杂的图论I
-** luogu 较复杂的图论II
-
-=== 数据结构 ===
-
-* 学习
-** (done) 树状数组
-** 主席树
-** 权值线段树
-** 树套树
-** 树上倍增
-** 堆
-** Fibonacci 堆
-** 树链剖分
-* 刷题
-** kuangbin 线段树
-** luogu 线性数据结构
-** luogu 树形数据结构
-** luogu 提高模板-nlogn数据结构
-** luogu 线段树树状数组基础
-** luogu 倍增
-** luogu 堆
-
-=== 动态规划 ===
-
-* 学习
-** 复习背包九讲
-** LIS和LCS
-** 状态压缩
-** 单调队列
-** 区间DP
-** 树形DP
-** 斜率优化
-** 插头DP
-* 刷题
-** kuangbin 基础DP1
-** kuangbin 数位DP
-** kuangbin 区间DP
-** (done) luogu 动态规划的背包问题 19/05/03
-** (done) luogu 线性动态规划 19/05/04
-** luogu 多维动态规划
-** luogu 更要技巧的动规与记忆化
-** luogu 动态规划TG.lv(1)
-** luogu 动态规划TG.lv(2)
-** luogu 动态规划TG.lv(3)

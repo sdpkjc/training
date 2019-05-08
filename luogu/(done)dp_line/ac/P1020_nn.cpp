@@ -1,7 +1,7 @@
-#include <algorithm>
 // P1020 导弹拦截 nn
 // https://www.luogu.org/problemnew/show/P1020
 
+#include <algorithm>
 #include <cmath>
 #include <cstdio>
 using namespace std;

@@ -1,14 +1,13 @@
-/* *******************************
- * 二分图匹配（Hopcroft-Karp 算法）
- * 复杂度 O(sqrt(n)*E)
- * 邻接表存图，vector 实现
- * vector 先初始化，然后假如边
- * uN 为左端的顶点数，使用前赋值 (点编号 0 开始)
- */
+// HDU-2389 Rain on your Parade
+// https://vjudge.net/problem/HDU-2389
+
+#include <string.h>
+#include <algorithm>
+#include <cmath>
 #include <queue>
 #include <vector>
 using namespace std;
-const int MAXN = 3000;
+const int MAXN = 10000;
 const int INF = 0x3f3f3f3f;
 vector<int> G[MAXN];
 int uN;
@@ -21,7 +20,7 @@ bool SearchP() {
   dis = INF;
   memset(dx, -1, sizeof(dx));
   memset(dy, -1, sizeof(dy));
-  for (int i = 0; i < uN; i++) {
+  for (int i = 1; i <= uN; i++) {
     if (Mx[i] == -1) {
       Q.push(i);
       dx[i] = 0;
@@ -71,7 +70,7 @@ int MaxMatch() {
   memset(My, -1, sizeof(My));
   while (SearchP()) {
     memset(used, false, sizeof(used));
-    for (int i = 0; i < uN; i++) {
+    for (int i = 1; i <= uN; i++) {
       if (Mx[i] == -1 && DFS(i)) {
         res++;
       }
@@ -79,3 +78,45 @@ int MaxMatch() {
   }
   return res;
 }
+
+double spe[MAXN], xp[MAXN], yp[MAXN];
+double xs[MAXN], ys[MAXN];
+
+bool connet(double x1, double y1, double x2, double y2, double t, double s) {
+  double len = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+  if (len <= t * s) return true;
+  return false;
+}
+
+int main() {
+  int T;
+  scanf("%d", &T);
+  for (int Case = 1; Case <= T; Case++) {
+    // for (int i = 0; i < MAXN; i++) G[i].clear();
+    printf("Scenario #%d:\n", Case);
+    int t, m;
+    int n;
+    scanf("%d%d", &t, &m);  // m ren
+    for (int i = 1; i <= m; i++) {
+      scanf("%lf%lf%lf", &xp[i], &yp[i], &spe[i]);
+    }
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++) {
+      scanf("%lf%lf", &xs[i], &ys[i]);
+    }
+    uN = m;
+    for (int i = 1; i <= m; i++) {
+      G[i].clear();
+      for (int j = 1; j <= n; j++) {
+        if (connet(xp[i], yp[i], xs[j], ys[j], t, spe[i])) {
+          G[i].push_back(j);
+        }
+      }
+    }
+    int ans = MaxMatch();
+    printf("%d\n\n", ans);
+  }
+  return 0;
+}
+
+// dinic 和 hungary 都超时，KM 算法上场
