@@ -1,8 +1,47 @@
-== 训练 ==
+== 比赛训练 ==
 
-[https://github.com/pa-zyx/training 代码仓库]
+* [[VnEpCxmR/zyx/19-07-01-vCF570_div3 | Virtual Codeforces Round #570 (Div. 3)]] 19/07/01 [2352/13602]
+* [[VnEpCxmR/zyx/19-06-30-vCF571_div2 | Virtual Codeforces Round #571 (Div. 2)]] 19/06/30 [378/9641]
 
-=== (ing) kuangbin 匹配问题 ===
+== 专题训练 ==
+
+[https://github.com/pa-zyx/training 代码仓库] | [[VnEpCxmR/zyx/simple | 水题计划]]
+
+=== (ing) luogo 平衡树 ===
+
+* (done) P3369 【模板】普通平衡树 (splay)
+
+---
+
+* P2042 [NOI2005]维护数列
+* P2596 [ZJOI2006]书架
+* P1110 [ZJOI2007]报表统计
+* P3285 [SCOI2014]方伯伯的OJ
+* P3644 [APIO2015]八邻旁之桥
+* P3765 总统选举
+
+---
+
+* ext_pbds库
+
+=== (todo) luogo 莫队算法 ===
+
+* (done) P1972 [SDOI2009]HH的项链 (数据加强了卡莫队的题，莫队拿了80分，树状数组100分)
+* (done) P2709 小B的询问 (裸莫队，分块)
+* (done) P3709 大爷的字符串题 (大爷家1e9的字符集，离散化 + 莫队，询问区间中众数的出现次数)
+* (done) P3674 小清新人渣的本愿 (bitset + 莫队)
+
+---
+
+* P2336 [SCOI2012]喵星球上的点名 (后缀数组 + 莫队，不会，等我学一下后缀数组)
+
+---
+
+* 学一下后缀数组
+* 整一个莫队的板子
+* (done) 写一下kuangbin板子上的莫队题：BZOJ 2038: [2009 国家集训队] 小 Z 的袜子 (组合数学公式，询问区间各种袜子数量的平方和)
+
+=== (todo) kuangbin 匹配问题 ===
 
 * (done) HDU-1045 Fire Net (每一行或每一列每多一堵墙流量加 1，然后跑最大流)
 * (done) HDU-2444 The Accomodation of Students (图黑白染色"P1330-封锁阳光大学" + 二分图匹配，匈牙利或者跑最大流都可以)
@@ -43,10 +82,10 @@
 * (done) HDU-4027 Can you answer these queries? (区间开平方，优化做完还要输入输出挂，build())
 * (done) HDU-1540 Tunnel Warfare (最大连续区间\*)
 * (done) HDU-4578 Transformation (维护和、积、平方和、立方和，好麻烦，平方和立方展开公式)
+* (done) POJ-2528 Mayor's posters (区间染色，数据范围有问题，n不小于10000，垃圾题！)
 
 ---
 
-* POJ-2528 Mayor's posters
 * ZOJ-1610 Count the Colors
 * HDU-4614 Vases and Flowers //
 * HDU-4553 约会安排
@@ -60,6 +99,33 @@
 * ios_base::sync_with_stdio(0); cin.tie(NULL);
 
 === 归档 ===
+
+==== (done) USACO Section_1 19/07/05 ====
+
+* (done) P1200 [USACO1.1]你的飞碟在这儿Your Ride Is He… (取模)
+* (done) P1201 [USACO1.1]贪婪的送礼者Greedy Gift Givers (map)
+* (done) P1202 [USACO1.1]黑色星期五Friday the Thirteenth (日期计算，蔡基姆拉尔森公式)
+* (done) P1203 [USACO1.1]坏掉的项链Broken Necklace (枚举，好题)
+* (done) P3864 [USACO1.2]命名那个数字 Name That Number (判断技巧)
+* (done) P1204 [USACO1.2]挤牛奶Milking Cows (暴力)
+* (done) P1205 [USACO1.2]方块转换 Transformations (矩阵各种反转旋转)
+* (done) P1206 [USACO1.2]回文平方数 Palindromic Squares (B进制回文数)
+* (done) P1207 [USACO1.2]双重回文数 Dual Palindromes (P1206 + 枚举)
+* (done) P1208 [USACO1.3]混合牛奶 Mixing Milk (贪心)
+* (done) P1209 [USACO1.3]修理牛棚 Barn Repair (贪心)
+* (done) P1211 [USACO1.3]牛式 Prime Cryptarithm (枚举)
+* (done) P3650 [USACO1.3]滑雪课程设计Ski Course Design (暴力出奇迹)
+* (done) P2693 [USACO1.3]号码锁 Combination Lock (条件判断，枚举)
+* (done) P1214 [USACO1.4]等差数列 Arithmetic Progressions (枚举)
+* (done) P1215 [USACO1.4]母亲的牛奶 Mother's Milk (DFS暴搜)
+* (done) P1216 [IOI1994][USACO1.5]数字三角形 Number Triangles
+* (done) P1217 [USACO1.5]回文质数 Prime Palindromes (打表优化范围后过了) //
+* (done) P1218 [USACO1.5]特殊的质数肋骨 Superprime Rib (欧拉筛 + 打表水过)
+* (done) P1444 [USACO1.3]虫洞wormhole (枚举妙哟，图中判断环)
+
+---
+
+* (done) 模板里加一下日期计算的公式
 
 ==== (done) luogo 简单模拟 19/05/08 ====
 
@@ -240,3 +306,82 @@
 * (done) [https://blog.pazyx.xyz/2019/04/29/kuangbin_short_path/ 题解] 
 * (done) floyd 传递闭包 || DFS 传递闭包 -> POJ-3660 Cow Contest
 * (done) 差分约束系统
+
+== 计划 ==
+
+=== 图论 ===
+
+* 学习
+** (done) 传递闭包
+** (done) 差分约束系统
+** 补一下并查集
+** Tarjan 强连通分量
+** 最小生成树的性质
+** ISAP
+** SAP
+** 2-SAT
+** LCA
+** (done) 最小费用最大流
+** 欧拉路径，欧拉回路
+** 次小生成树
+** 最小生成树计数
+* 刷题
+** (done) kuangbin 最短路 19/04/28
+** (done) kuangbin 最小生成树 19/04/29
+** (done) luogu 图的遍历 19/04/30
+** (done) luogu 最小生成树 19/05/01
+** (done) luogu 最短路问题 19/05/02
+** (done) kuangbin 网络流 19/05/02
+** kuangbin 搜索进阶
+** kuangbin 匹配问题 
+** kuangbin 并查集 
+** kuangbin 生成树
+** kuangbin 连通图
+** luogu 强连通分量
+** luogu 较复杂的图论I
+** luogu 较复杂的图论II
+
+=== 数据结构 ===
+
+* 学习
+** (done) 树状数组
+** 莫队算法
+** 主席树
+** 权值线段树
+** 树套树
+** 树上倍增
+** 堆
+** Fibonacci 堆
+** 树链剖分
+* 刷题
+** luogo 莫队算法
+** kuangbin 线段树
+** luogu 线性数据结构
+** luogu 树形数据结构
+** luogu 提高模板-nlogn数据结构
+** luogu 线段树树状数组基础
+** luogu 倍增
+** luogu 堆
+
+=== 动态规划 ===
+
+* 学习
+** (done) 复习背包九讲
+** (done) LIS和LCS
+** 状态压缩
+** 单调队列
+** 区间DP
+** 树形DP
+** 斜率优化
+** 插头DP
+* 刷题
+** kuangbin 基础DP1
+** kuangbin 数位DP
+** kuangbin 区间DP
+** (done) luogu 动态规划的背包问题 19/05/03
+** (done) luogu 线性动态规划 19/05/04
+** luogu 多维动态规划
+** luogu 更要技巧的动规与记忆化
+** luogu 动态规划TG.lv(1)
+** luogu 动态规划TG.lv(2)
+** luogu 动态规划TG.lv(3)

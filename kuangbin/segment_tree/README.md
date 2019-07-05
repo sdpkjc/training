@@ -9,10 +9,10 @@
 * (done) HDU-4027 Can you answer these queries? (区间开平方，优化做完还要输入输出挂，build())
 * (done) HDU-1540 Tunnel Warfare (最大连续区间\*)
 * (done) HDU-4578 Transformation (维护和、积、平方和、立方和，好麻烦，平方和立方展开公式)
+* (done) POJ-2528 Mayor's posters (区间染色，离线，数据范围有问题，n不小于10000，垃圾题)
 
 ---
 
-* POJ-2528 Mayor's posters
 * ZOJ-1610 Count the Colors
 * HDU-4614 Vases and Flowers //
 * HDU-4553 约会安排

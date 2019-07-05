@@ -2,11 +2,14 @@
 
 ## ing
 
+* luogo 平衡树
+* luogo 莫队算法
 * kuangbin 匹配问题
 * kuangbin 线段树
 
 ## done
 
+* USACO Section_1 19/07/05
 * luogo 简单模拟 19/05/08
 * luogo 贪心 & 贪心EX 19/05/07
 * luogu 线性动态规划 19/05/04
