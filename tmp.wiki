@@ -1,5 +1,9 @@
+[[VnEpCxmR]]
+
 == 比赛训练 ==
 
+* [[VnEpCxmR/zyx/19-07-14-CFE68_div2 | Educational Codeforces Round 68 (Rated for Div. 2) ]] 19/07/14 [582/5985]
+* [[VnEpCxmR/zyx/19-07-10-vCF572_div2 | Virtual Codeforces Round #572 (Div. 2)]] 19/07/10 [123/9938]
 * [[VnEpCxmR/zyx/19-07-01-vCF570_div3 | Virtual Codeforces Round #570 (Div. 3)]] 19/07/01 [2352/13602]
 * [[VnEpCxmR/zyx/19-06-30-vCF571_div2 | Virtual Codeforces Round #571 (Div. 2)]] 19/06/30 [378/9641]
 
@@ -7,9 +11,45 @@
 
 [https://github.com/pa-zyx/training 代码仓库] | [[VnEpCxmR/zyx/simple | 水题计划]]
 
+=== (ing) USACO Section_2 ===
+
+* P1457 城堡 The Castle
+* P1458 顺序的分数 Ordered Fractions
+* P1459 三值的排序 Sorting a Three-Valued Sequence
+* P1460 健康的荷斯坦奶牛 Healthy Holsteins
+* P1461 海明码 Hamming Codes
+* P1465 序言页码 Preface Numbering
+* P1466 集合 Subset Sums
+* P1467 循环数 Runaround Numbers
+* P1468 派对灯 Party Lamps
+* P1470 最长前缀 Longest Prefix
+* P1472 奶牛家谱 Cow Pedigrees
+* P1473 零的数列 Zero Sum
+* P1474 货币系统 Money Systems
+* P1475 控制公司 Controlling Companies
+* P1518 两只塔姆沃斯牛 The Tamworth Two
+* P1519 穿越栅栏 Overfencing
+* P1522 牛的旅行 Cow Tours
+* P1529 回家 Bessie Come Home
+* P1530 分数化小数 Fractions to Decimals
+
+=== (ing) XMU-训练-高维偏序 ===
+
+* (done) P3380 【模板】二逼平衡树（树套树）(线段树套treap树)
+* (done) P4514 上帝造题的七分钟 (二维树状数组 + 差分序列)
+
+---
+
+* P3157 [CQOI2011]动态逆序对
+* P4027 [NOI2007]货币兑换
+* P3527 [POI2011]MET-Meteors
+* P3834 【模板】可持久化线段树 1（主席树）
+* P2048 [NOI2010]超级钢琴
+* P2839 [国家集训队]middle
+
 === (ing) luogo 平衡树 ===
 
-* (done) P3369 【模板】普通平衡树 (splay)
+* (done) P3369 【模板】普通平衡树 (splay,treap,pb_ds)
 
 ---
 
@@ -23,6 +63,10 @@
 ---
 
 * ext_pbds库
+* (done) 睡个觉养一下精神
+* (done) P3391 【模板】文艺平衡树（splay树区间反转）
+* (done) SP1716 GSS3 - Can you answer these queries III (线段树)
+* "好好养生，如果不够肝的话千万别写这道题." (P2042 [NOI2005]维护数列) 真的千万别写，走入歧途了，前置技能和题目已经写完了，不得不继续。
 
 === (todo) luogo 莫队算法 ===
 
@@ -345,7 +389,7 @@
 
 * 学习
 ** (done) 树状数组
-** 莫队算法
+** (done) 莫队算法
 ** 主席树
 ** 权值线段树
 ** 树套树
