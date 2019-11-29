@@ -1,0 +1,83 @@
+#include <limits.h>
+#include <iostream>
+using namespace std;
+
+// #define int long long
+const int MAX_N = 100010;
+struct node {
+  int sum, col, xorCOL, orCOL, andCOL;
+} s[4 * MAX_N];
+void up(int p) { s[p].sum = s[p * 2].sum + s[p * 2 + 1].sum; }
+
+void down(int p, int l, int r) {
+  int mid = (l + r) / 2;
+  if (s[p].col) {
+    s[p * 2].sum += s[p].col * (mid - l + 1);
+    s[p * 2 + 1].sum += s[p].col * (r - mid);
+    s[p * 2].col += s[p].col;
+    s[p * 2 + 1].col += s[p].col;
+    s[p].col = 0;
+  }
+}
+
+void modify(int p, int l, int r, int x, int y, int c) {
+  if (x <= l && r <= y) {
+    s[p].sum += (r - l + 1) * c;
+    s[p].col += c;
+    return;
+  }
+  down(p, l, r);
+  int mid = (l + r) / 2;
+  if (x <= mid) {
+    modify(p * 2, l, mid, x, y, c);
+  }
+  if (y > mid) {
+    modify(p * 2 + 1, mid + 1, r, x, y, c);
+  }
+  up(p);
+}
+
+int querySum(int p, int l, int r, int x, int y) {
+  if (x <= l && r <= y) {
+    return s[p].sum;
+  }
+  down(p, l, r);
+  int mid = (l + r) / 2, res = 0;
+  if (x <= mid) {
+    res += querySum(p * 2, l, mid, x, y);
+  }
+  if (y > mid) {
+    res += querySum(p * 2 + 1, mid + 1, r, x, y);
+  }
+  return res;
+}
+
+signed main() {
+  int a, b, c;
+  cin >> a >> b >> c;
+  cout << (a ^ c) + (b ^ c) << " " << ((a + b) ^ c) << endl;
+  //   int n, m;
+  //   scanf("%d%d", &n, &m);
+  //   modify(1, 1, n, 1, n, 0);
+
+  //   while (m--) {
+  //     char ca;
+  //     int x, y, c;
+  //     scanf(" %c", &ca);
+  //     if (ca == 'Q') {
+  //       scanf("%d%d", &x, &y);
+  //       printf("%d\n", querySum(1, 1, n, x, y));
+  //     } else if (ca == 'C') {
+  //       scanf("%d%d%d", &x, &y, &c);
+  //       modify(1, 1, n, x, y, c);
+  //     } else if (ca == 'X') {
+  //       scanf("%d%d", &x, &y);
+  //       modify(1, 1, n, x, y, queryMax(1, 1, n, x, y));
+  //     } else if (ca == 'N') {
+  //       scanf("%d%d", &x, &y);
+  //       modify(1, 1, n, x, y, -queryMin(1, 1, n, x, y));
+  //     }
+  //   }
+
+  return 0;
+}
